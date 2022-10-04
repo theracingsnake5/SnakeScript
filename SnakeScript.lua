@@ -23,9 +23,9 @@ util.toast("Welcome! Thanks for using Snake Script!")
 local Self = menu.list(menu.my_root(),
 "Self", {}, "Self Options")
 
---menu.toggle(Self, "Godmode", {}, "", function ()
-   -- menu.trigger_commands("Immortality")
---end)
+menu.toggle(Self, "Godmode", {}, "", function ()
+    menu.trigger_commands("Immortality")
+end)
 
 menu.toggle(Self, "No Ragdoll", {}, "", function ()
     menu.trigger_commands("grace")
